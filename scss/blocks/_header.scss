@@ -1,0 +1,131 @@
+.dark {
+    --bodyBg: #000;
+    --hero-btnBg:#ff94c7;
+    --hero-btnCl:#000;
+    --title:#fff;
+    --text:#d6d6d6;
+    --advenciBg:#211F25;;
+    --carousel:#555555;;
+    --getStartedBg:linear-gradient(72.67deg, #1A1822 2.78%, #9040E3 173.27%), #6B50FF;
+    --newsBg: #555555;  
+    --background-image: url("../images/bg-dark.svg");
+}
+
+
+.circle {
+    background-image: url("../images/bg-color.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 850px;
+    margin-bottom: 80px;
+}
+
+.dark__logo.shownav {
+    display: none;
+}
+
+.header {
+    padding: 55px 0 80px;
+}
+
+.btn-js {
+    background-image: url("../images/menu.svg");
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    border: none;
+    background-color: transparent;
+}
+
+.shownav .btn-js {
+    background-image: url("../images/close.svg");
+}
+
+.header__wrapper {
+    position: relative;
+    z-index: 10;
+}
+
+.header__nav {
+    position: fixed;
+    z-index: -1;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--burgerBg);
+    transform: translateY(-200%);
+    transition: 1s;
+}
+
+.shownav .header__nav  {
+    transform: translateY(0%);
+}
+
+.header__list {
+    padding-top: 193px !important;
+}
+
+.header__link{
+    display: inline-block;
+    font-weight: 400;
+    color:#fff;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.header__link:hover {
+    color:#fff !important;
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+
+@include mobile-first (768px){
+
+    .circle {
+        margin-bottom: 203px;
+    }
+    
+    .header__nav {
+        position: static;
+        transform: translateY(0);
+        background-color: transparent;
+    }
+    
+    .header__list {
+        padding-top: 0 !important;
+    }
+    
+    .header__link {
+        margin-bottom: 0;
+        margin-left: 20px;
+    }
+    
+    .dark__logo {
+        margin-left: 10px;
+    }
+}
+
+@include mobile-first (992px) {
+
+    .circle {
+        margin-bottom: 603px;
+    }
+    
+    .header {
+        padding-bottom: 157px;
+    }
+    
+    .header__link {
+        margin-left: 40px;
+    }
+    
+    .dark__logo {
+        margin-left: 30px;
+    }
+}

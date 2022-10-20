@@ -1,0 +1,37 @@
+/* Customer start */
+
+.customer__info {
+    max-width: 342px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.customer__info-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--title);
+}
+
+.customer__text {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color:var(--text);
+}
+
+@include mobile-first( 768px){
+ 
+    .customer__info {
+        max-width: 584px;
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .customer__info-title {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    
+}
+/* Customer end */

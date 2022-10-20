@@ -1,0 +1,88 @@
+/* Pricing start */
+
+.pricing {
+    padding-bottom: 100px;
+}
+
+.pricing__card {
+    max-width: 324px;
+    width: 100%;
+    padding: 12px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.pricing__card:hover {
+    border: 1px solid var(--hero-btnBg);
+    border-radius: 8px;
+}
+
+.pricing__card:hover  .pricing__btn {
+    background-color: var(--hero-btnBg);
+    color: #fff;
+}
+
+.item {
+    position: relative;
+    &::after {
+        position: absolute;
+        top: 0;
+        background-image: url("../../images/Check.svg");
+        width: 24px;
+        height: 24px;
+        content: "";
+    }
+    
+}
+
+.item__text {
+    padding-left: 32px;
+    color:var(--text);
+}
+
+
+.pricing__card-title {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.pricing__strong {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 8px;
+}
+
+.pricing__span {
+    margin-bottom: 39px;
+}
+
+.pricing__btn {
+    display: inline-block;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    padding: 16px 0;
+    text-decoration: none;
+    color:var(--hero-btnBg);
+    border: 1px solid var(--hero-btnBg) !important;
+    border-radius: 32px;
+    border: none;
+    
+}
+
+@include mobile-first (992px){
+    
+    .pricing__info {
+        max-width: 600px;
+    }
+}
+
+
+/* Pricing end */

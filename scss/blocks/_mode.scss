@@ -1,0 +1,13 @@
+/* Mode start */
+
+.mode {
+    padding-bottom: 50px;
+}
+
+@include mobile-first (768px){
+    .mode{
+        margin-bottom: 60px;
+    }
+}
+
+/* Mode end */

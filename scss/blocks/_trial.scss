@@ -1,0 +1,47 @@
+/* Trial start */
+
+.trial {
+    padding: 83px 0;
+    background-color: var(--getStartedBg);
+}
+
+.trial__info {
+    max-width: 700px;
+}
+
+.trial__title {
+    color:#fff;
+}
+
+.trial__text {
+    color:#fff;
+}
+
+.form-control {
+    border-radius: 32px !important;
+    max-width: 365px;
+    width: 100%;
+}
+
+
+.btn {
+    border-radius: 32px !important;
+    background-color: var(--hero-btnBg) !important;
+}
+
+.trial-txt {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    color:#fff;
+    text-align: center;
+    
+}
+
+@include mobile-first (992px){
+    .trial{
+        padding: 112px 0;
+    }
+}
+
+/* Trial end */

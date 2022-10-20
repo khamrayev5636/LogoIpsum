@@ -1,0 +1,129 @@
+/* Hero start */
+
+
+.hero__info {
+    max-width: 342px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.hero__title {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 42px;
+    color:#fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hero__text {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color:#fff;
+}
+
+.hero__button {
+    padding-bottom: 80px;
+}
+
+.hero__btn {
+    max-width: 342px;
+    width: 100%;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 32px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.hero__vedio {
+    font-weight: 600;
+    line-height: 25px;
+    color:#fff;
+    border: 1px solid #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 96px;
+    margin-bottom: 10px;
+}
+
+.header__get {
+    background-color: var(--hero-btnBg);
+    color:var(--hero-btnCl);
+    padding: 18px 0;
+}
+
+.hero__iframe {
+    position: absolute;
+    max-width: 320px;
+    width: 100%;
+    height: 250px;
+    transform: translateY(-350%);
+    transition: all 1s ease;
+}
+
+.hero__iframe.shownav {
+    top: 20%;
+    transform: translateY(0);
+}
+
+.hero__mac-img {
+    max-width: 333px;
+    width: 100%;
+}
+
+@include mobile-first (768px){
+
+    .hero__mac-img {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .hero__iframe {
+        max-width: 550px;
+        height: 450px;
+    }
+
+    .hero__iframe.shownav {
+        top: 10%;
+    }
+
+    .hero__info {
+        max-width: 737px;
+    }
+    
+    .hero__title {
+        font-size: 56px;
+        line-height: 67px;
+    }
+
+    .hero__text  {
+        font-size: 18px;
+        line-height: 28px;
+        width: 471px;
+    }
+
+    .hero__btn  {
+        max-width: 187px;
+        width: 100%;
+    }
+
+    .hero__vedio {
+        padding-left: 19px;
+        margin-bottom: 0;
+    }
+
+    .header__get{
+        margin-right: 33px;
+    }
+
+}
+
+@include mobile-first (992px) {
+    .hero__mac-img {
+        max-width: 977px;
+        width: 100%;
+    }
+}
+
+/* Hero end */
